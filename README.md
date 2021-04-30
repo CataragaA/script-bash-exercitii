@@ -1,1 +1,0 @@
-# script-bash-exercitii
