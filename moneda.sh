@@ -22,3 +22,17 @@ cat output/sume_monede_trimise_nu_ana.txt
 echo "=========="
 echo -e "\n"
 
+echo "Scrie intr-un fisier nou creat, ‘lista_sume_monede_primite_ana’, toate sumele si monedele primite de ana."
+find ./input -name "*ana.txt" | cut -d - -f 2,3 > output/lista_sume_monede_primite_ana.txt
+echo " ===Rezultat obtinut==="
+cat output/lista_sume_monede_primite_ana.txt
+echo "=========="
+echo -e "\n"
+
+echo "Scrie intr-un fisier nou creat, ‘info_sume_monede_primite_ana’, numele destinatarului si al expeditorului."
+find ./input -name "*ana.txt" | cut -d - -f -1,4- | cut -d / -f 3 | cut -d . -f 1 > output/info_sume_monede_primite_ana.txt
+echo " ===Rezultat obtinut==="
+cat output/info_sume_monede_primite_ana.txt
+echo "=========="
+echo -e "\n"
+
