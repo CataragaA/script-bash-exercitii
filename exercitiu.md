@@ -1,9 +1,9 @@
-In foder-ul ‘ana’ avem fisierele cu formatul  expeditor-suma-moneda-destinatar:
+In foderul ‘input’ avem 5 fisiere cu denumirea despre  expeditor-suma-moneda-destinatar:
 
-ana-100-eur-mara
-mara-200-ron-ana
-dana-8765-gbp-ana
-ana-2-mdl-mara
+* ana-100-eur-mara
+* mara-200-ron-ana
+* dana-8765-gbp-ana
+* ana-2-mdl-mara
 
 
 1. Scrie intr-un fisier nou creat, numit ’sume_trimise_ana’, toate sumele  trimise de ana. 
