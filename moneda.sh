@@ -46,7 +46,7 @@ echo -e "\n"
 
 
 echo "7.Scrie intr-un fisier "drepturi_fisiere", drepturile fiecarui fisier de input, urmat de numele fisierului."
-ls -l input/ | cut -d " " -f 1,9 > output/drepturi_fisiere.txt
+find ./input -type f -name "*" | xargs ls -l | tr -s " " | cut -d " " -f 1,9 > output/drepturi_fisiere.txt
 echo " ===Rezultat obtinut==="
 cat output/drepturi_fisiere.txt
 echo "=========="
@@ -54,5 +54,9 @@ echo -e "\n"
 
 echo "8.Gaseste fisierele in care se fac transferuri de 100 si 200."
 find ./input/ -type f -name "*100*" -o -name "*200*"
+# metoda 2 :  find ./input/ -regex ".*[100][200].*"
+# metoda 3 :find ./input/ -type f -name "*" | grep -e "100" -e "200"
+# metoda 3.1. : find ./input/ -type f -name "*" | grep -e "100\|200"
 echo "=========="
+
 

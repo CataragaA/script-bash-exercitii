@@ -19,7 +19,9 @@ In foderul ‘input’ avem 6 fisiere cu denumirea despre  expeditor-suma-moneda
 5. Scrie intr-un fisier nou creat, ‘info_sume_monede_primite_ana’, numele expeditorului si destinatarului.
 
 6. Scrie intr-un fisier nou creat  ‘lista_monede’, lista tuturor monedelor folosite. 
+   
 7. Scrie intr-un fisier "drepturi_fisiere", drepturile fiecarui fisier de input, urmat de numele fisierului.
+   
 8. Gaseste fisierele in care se fac transferuri de 100 si 200 folosind doua metode: 
     * cu comanda find si te ajuti de comanda grep.
     * folosind expresie regulata ca argument pentru find (find cu expresie regulata, o sa folosesti -regex in loc de -name)
