@@ -1,2 +1,2 @@
-dana-ana
-mara-ana
+dana,ana
+mara,ana

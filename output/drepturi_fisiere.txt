@@ -1,0 +1,7 @@
+total
+-rw-rw-r-- ana-100-eur-mara.txt
+-rw-rw-r-- ana-2-mdl-mara.txt
+-rw-rw-r-- dana-100-eur-mara.txt
+-rw-rw-r-- dana-8765-gbp-ana.txt
+-rw-rw-r-- 14:11
+-rw-rw-r-- mara-200-ron-ana.txt
