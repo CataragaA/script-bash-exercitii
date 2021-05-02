@@ -1,19 +1,9 @@
-1.
-Se da folderul output ce contine urmatoarele fisiere:  
-* abc.txt 
-* bcd.txt 
-* ana.txt
+1. Se da folderul `input` ce contine fisierul files.txt in care se afla mai multe nume de fisiere(cate un fisier pe fiecare linie noua). Dintr-o singura comanda creeaza (in output) fisierele, care vor avea denumirea identica cu continutul fisierului files.txt. "
 
- Cu o singura comanda, sterge toate fisierele din output care incep cu litera “a”.
+    1.1. Daca continutul fisierului files.txt reprezinta un singur rand separat prin ,,;" , vom utiliza urmatoarea comanda:\
+`cat ./input/files.txt | tr ";" "\n" | xargs touch`
 
+Astfel caracterul `;` va fi inlocuit cu caracterul `enter` prin comenda tr.
 
 
-2. Se da folderul input ce contine fisierul files.txt.
-   
-Fisierul files.txt contine urmatorul text:
-* ./out/abc.txt
-* ./out/bcd.txt
-* ./out/ana.txt
-
-Creaza un folder gol out.
-Dintr-o singura comanda creeza (in out) fisierele ce apar in files.txt
+1. Cu o singura comanda, sterge toate fisierele din output care incep cu litera “a”. 

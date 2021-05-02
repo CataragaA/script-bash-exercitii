@@ -1,3 +1,4 @@
-./out/abc.txt
-./out/bcd.txt
-./out/ana.txt
+./output/abc.txt
+./output/bcd.txt
+./output/ana.txt
+
