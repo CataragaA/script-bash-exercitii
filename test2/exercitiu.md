@@ -8,10 +8,12 @@ Se da folderul output ce contine urmatoarele fisiere:
 
 
 
-2. Se da folderul input ce contine fisierul files.txt, si in care se afla urmatorul text:
+2. Se da folderul input ce contine fisierul files.txt.
+   
+Fisierul files.txt contine urmatorul text:
 * ./out/abc.txt
 * ./out/bcd.txt
 * ./out/ana.txt
 
 Creaza un folder gol out.
-Dintr-o singura comanda creaza (in out) fisierele, care vor avea denumirea identica cu continutul fisierului files.txt
+Dintr-o singura comanda creeza (in out) fisierele ce apar in files.txt

@@ -1,0 +1,3 @@
+./out/abc.txt
+./out/bcd.txt
+./out/ana.txt
