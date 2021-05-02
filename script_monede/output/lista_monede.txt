@@ -1,6 +1,4 @@
 eur
-mdl
-eur
 gbp
-eur
+mdl
 ron

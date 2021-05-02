@@ -38,7 +38,7 @@ echo "=========="
 echo -e "\n"
 
 echo "6.Scrie intr-un fisier nou creat  ‘lista_monede’, lista tuturor monedelor folosite."
-ls -1 input/ | cut -d - -f 3 > output/lista_monede.txt
+ls -1 input/ | cut -d - -f 3 | sort | uniq > output/lista_monede.txt
 echo " ===Rezultat obtinut==="
 cat output/lista_monede.txt
 echo "=========="
