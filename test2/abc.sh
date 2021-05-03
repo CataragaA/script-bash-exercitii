@@ -8,8 +8,10 @@ Dintr-o singura comanda creaza (in output) fisierele, care vor avea denumirea id
 
 cat ./input/files.txt | xargs touch 
 echo "Comanda utilizata este : cat ./input/files.txt | xargs touch"
-echo " ===fisierele au fost create==="
-echo " =============="
+echo "===fisierele au fost create==="
+ls -1 output
+echo "=============="
+
 
 # Daca continutul fisierului files.txt ar reprezenta un singur rand separat prin ; 
 # Atunci vom utiliza urmatoarea comanda: cat ./input/files.txt | tr ";" "\n" | xargs touch`
@@ -22,7 +24,14 @@ echo "2.Cu o singura comanda, sterge toate fisierele din output care incep cu li
 find ./output/ -name "a*" | xargs rm
 echo "Comanda utilizata este : find ./output/ -name "a*" | xargs rm"
 
-echo " ===fisierele au fost sterse==="
-echo " =============="
+echo "===fisierele cautate au fost sterse==="
+ls -1 output
+echo "=============="
+echo -e "\n"
+
+echo "3.Afiseaza toate numerele din aceeasi linie cu Ana din fisierele cu numele ei."
+find ./input/problema_2/ -name "ana*" | xargs cat | grep -i ",ana$" | cut -d , -f 1
+echo "===numerele sunt afisate==="
+echo "=============="
 echo -e "\n"
 
