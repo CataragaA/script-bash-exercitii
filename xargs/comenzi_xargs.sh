@@ -5,11 +5,21 @@ mkdir -p output
 echo "1.Se da folderul <input> ce contine fisierul files.txt in care se afla mai multe nume de fisiere(cate un fisier pe fiecare linie noua)
 
 Dintr-o singura comanda creaza (in output) fisierele, care vor avea denumirea identica cu continutul fisierului files.txt. "
+echo -e "\n"
 
-cat ./input/files.txt | xargs touch 
-echo "Comanda utilizata este : cat ./input/files.txt | xargs touch"
+cat ./input/files.txt | xargs touch
+status="$?"
+if  [ $status == "0" ]
+then
+	echo "Status 0 : Comanda a fost efectuata cu succes"
+elif [ $status == "1" ] 
+then
+	echo "Status 1 : Comanda a rulat cu o eroare"
+else
+	echo "Status : alta eroare proces in afara de 0 si 1"
+fi
+ 
 echo "===fisierele au fost create==="
-ls -1 output
 echo "=============="
 
 
@@ -17,12 +27,12 @@ echo "=============="
 # Atunci vom utiliza urmatoarea comanda: cat ./input/files.txt | tr ";" "\n" | xargs touch`
 # Astfel caracterul `;` va fi inlocuit cu caracterul `enter` prin comenda tr.
 
+read -p " apasa enter"
 echo -e "\n"
 
 echo "2.Cu o singura comanda, sterge toate fisierele din output care incep cu litera “a”. "
 
 find ./output/ -name "a*" | xargs rm
-echo "Comanda utilizata este : find ./output/ -name "a*" | xargs rm"
 
 echo "===fisierele cautate au fost sterse==="
 ls -1 output
